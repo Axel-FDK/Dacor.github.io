@@ -605,215 +605,6 @@ strong {
     padding: 16px 20px;
 }
 
-
-/* Media query general para tablets y pantallas medianas */
-@media (max-width: 1200px) {
-
-    html {
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
-
-    /* Contenedores flex verticales */
-    .info-container,
-    .next-container,
-    .benefits-container,
-    .section-four-container,
-    .section-five-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    /* Imagen circular más pequeña y sin transformaciones */
-    .info-image {
-        width: 350px;
-        height: 350px;
-        transform: none !important;
-        margin-bottom: 20px;
-    }
-
-    /* Textos al centro y sin márgenes que desborden */
-    .info-text,
-    .left-column,
-    .right-column,
-    .benefits-left,
-    .benefits-right,
-    .section-four-left,
-    .section-four-right,
-    .section-five-left,
-    .section-five-right {
-        margin: 0;
-        max-width: 100%;
-        text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .left-description {
-        width: 100%;
-    }
-
-    /* Imágenes que no desborden */
-    .benefits-image,
-    .section-four-image,
-    .section-five-image {
-        margin: 0 auto !important;
-        max-width: 90%;
-        height: auto;
-    }
-
-    /* Título hero más pequeño y sin margen lateral */
-    .hero-title {
-        font-size: 50px;
-        padding: 0 10px;
-        word-break: break-word;
-    }
-
-    .hero-content {
-        margin-top: 100px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-/* Media query para tablets y móviles grandes */
-@media (max-width: 768px) {
-
-    html,
-    body {
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-
-    /* Navbar: links más pequeños y con margen reducido */
-    .navbar-nav .nav-link {
-        font-size: 16px;
-        margin: 0 8px;
-        width: auto;
-    }
-
-    /* Hero título y texto más compactos */
-    .hero-title {
-        font-size: 35px;
-    }
-
-    .hero-content p {
-        font-size: 16px;
-    }
-
-    /* Footer logo más pequeño y centrado */
-    .logo-circular {
-        width: 200px;
-        height: 200px;
-        top: 10px;
-    }
-
-    .footer-info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 220px;
-        gap: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .item-footer {
-        justify-content: center;
-    }
-
-    /* Imagen circular info más pequeña */
-    .info-image {
-        width: 250px;
-        height: 250px;
-    }
-
-    /* Ajuste márgenes textos para evitar desbordes */
-    .info-text,
-    .section-four-right {
-        margin-left: 0 !important;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    /* Reducir padding en secciones para que no desborden */
-    .info-section,
-    .next-section,
-    .benefits-section,
-    .section-four,
-    .section-five {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-}
-
-/* Media query para móviles pequeños */
-@media (max-width: 480px) {
-
-    /* Hero título y texto más pequeños y con buen wrapping */
-    .hero-title {
-        font-size: 28px;
-        word-wrap: break-word;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
-
-    /* Navbar vertical, links centrados y sin márgenes */
-    .navbar-nav {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .navbar-nav .nav-link {
-        padding: 6px 0;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-    }
-
-    /* Imagen circular info aún más pequeña */
-    .info-image {
-        width: 200px;
-        height: 200px;
-    }
-
-    /* Imágenes en secciones max width 100% */
-    .benefits-image,
-    .section-four-image,
-    .section-five-image {
-        max-width: 100%;
-        margin: 0 auto;
-        height: auto;
-    }
-
-    /* Listas con texto más pequeño y sin desbordes */
-    .benefits-list li,
-    .section-four-list li,
-    .section-five-list li {
-        font-size: 14px;
-        padding-left: 1.2em;
-        word-wrap: break-word;
-    }
-
-    /* Footer texto y márgenes más pequeños */
-    .footer-info {
-        font-size: 16px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .footer-bottom {
-        font-size: 16px;
-    }
-}
-
 /* Laptop / pantallas medianas (hasta 1200px) */
 @media (max-width: 1200px) {
 
@@ -967,23 +758,40 @@ strong {
         display: flex;
         justify-content: center;
         align-items: center;
+        /* Esto ya centra verticalmente */
         color: white;
         padding: 0 40px;
         box-sizing: border-box;
         position: relative;
         z-index: 2;
-        margin-top: 0;
+        margin-top: 100px;
+        padding-top: 20px;
     }
 
+    .hero-content {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 0;
+        /* Elimina el margen superior para centrar verticalmente */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
 
     /* Hero título más pequeño */
     .hero-title {
-        font-size: 28px;
+        font-size: 23px;
         word-wrap: break-word;
     }
 
     .hero-content p {
         font-size: 14px;
+        width: 300px;
     }
 
     /* Navbar vertical, links centrados */
@@ -1001,8 +809,11 @@ strong {
 
     /* Imagen circular info más pequeña */
     .info-image {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Imágenes max width 100% */
@@ -1034,7 +845,24 @@ strong {
         font-size: 16px;
     }
 
-    .info-item {
-        display: none;
+    .logo-circular::before {
+        width: 210px;
+        height: 210px;
+    }
+
+    .logo-circular .logo-img {
+        width: 140px;
+    }
+
+    .next-section {
+        padding-top: 200px;
+    }
+
+    .info-section {
+        background-image: none;
+    }
+
+    .footer-info{
+        margin-top: 90px;
     }
 }

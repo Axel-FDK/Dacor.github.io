@@ -481,6 +481,7 @@ form button:hover {
     .hero {
         height: auto;
         padding: 60px 20px 40px;
+        margin-top: 90px;
     }
 
     .hero-title {
@@ -555,8 +556,13 @@ form button:hover {
     }
 
     .logo-circular {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .logo-circular::before {
+        width: 220px;
+        height: 220px;
     }
 
     .logo-circular .logo-img {
