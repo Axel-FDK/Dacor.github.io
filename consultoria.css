@@ -1,0 +1,526 @@
+/* Tipografías personalizadas */
+@font-face {
+    font-family: 'Aloevera';
+    src: url('./tipografias/Aloevera/Aloevera-SemiBold.otf') format('opentype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./tipografias/Helvetica Neue/Helvetica Neue LT Com 77 Bold Condensed.ttf') format('opentype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Desplazamiento suave al hacer scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar  */
+.navbar {
+    font-family: 'Helvetica', sans-serif;
+    min-height: 130px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Marca o logo de la navbar */
+.navbar-brand {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    color: #000000;
+}
+
+/* Estilos de enlaces del menú */
+.navbar-nav .nav-link {
+    text-align: left;
+    width: 130px;
+    padding: 0;
+    margin: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#contacto {
+    margin-top: 5px;
+}
+
+/* Sección principal con fondo de banner */
+.hero {
+    background: url('./img/img-consultoria/banner.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 1174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 90px;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+/* Contenedor del contenido del hero */
+.hero-content {
+    max-width: 600px;
+    width: 100%;
+    margin-left: auto;
+    text-align: left;
+    margin-right: 300px;
+    padding-bottom: 100px;
+}
+
+/* Título del hero */
+.hero-title {
+    font-size: 80px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: 'Aloevera';
+    letter-spacing: 2px;
+}
+
+/* Imagen de fondo para "Consultoria" */
+.highlight {
+    position: relative;
+    display: inline-block;
+    background-image: url('./img/img-consultoria/fondo.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0.2em 0.5em;
+    z-index: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(219, 151, 3, 0.836);
+    z-index: -1;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Sección propósito */
+.proposito {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    margin-top: -357px;
+    /* Para superponer con el hero */
+}
+
+.proposito-container {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: stretch;
+    position: relative;
+    max-height: 850px;
+}
+
+/* Columna izquierda */
+.proposito-img {
+    flex: 1;
+    overflow: hidden;
+}
+
+.proposito-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+/* Columna derecha */
+.proposito-texto {
+    flex: 1;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.proposito-texto-principal {
+    margin-top: 150px;
+    padding-left: 35px;
+}
+
+.proposito-texto h2 {
+    font-size: 40px;
+    color: #001f4d;
+    margin-bottom: 20px;
+}
+
+.proposito-texto p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    width: 600px;
+}
+
+.proposito-bloque {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    margin-left: -150px;
+    z-index: 2;
+}
+
+.proposito-bloque,
+.proposito-icono {
+    z-index: 2;
+}
+
+.proposito-icono {
+    width: 140px;
+    height: 140px;
+    min-width: 140px;
+    min-height: 140px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+    box-shadow: 0 0 0 4px #eaeaea;
+}
+
+.proposito-icono img {
+    width: 145px;
+    height: 145px;
+}
+
+.proposito-iconos {
+    margin-bottom: 80px;
+}
+
+
+.proposito-info strong {
+    font-size: 24px;
+    color: #4b4b4b;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.proposito-info p {
+    margin: 4px 0 0;
+    font-size: 21px;
+    color: #666;
+    font-weight: lighter;
+}
+
+/* Sección CTA con fondo */
+.cta-section {
+    background: url('./img/img-consultoria/fondo.png') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    color: #071b35;
+    position: relative;
+}
+
+.cta-title {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.cta-description {
+    font-size: 21px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.cta-button {
+    background-color: #008d2f;
+    color: white;
+    padding: 14px 70px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button {
+    position: relative;
+    left: 400px;
+}
+
+.cta-button .arrow {
+    font-weight: bold;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+.cta-button:hover {
+    background-color: #00bd3c;
+}
+
+/* Footer */
+.footer-dacor {
+    background: url('./img/footer/fondo.png') no-repeat center center;
+    position: relative;
+    overflow: visible;
+    min-height: 438px;
+    padding-top: 10px;
+}
+
+.logo-circular {
+    width: 390px;
+    height: 390px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+
+.logo-circular::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background-color: rgba(201, 201, 201, 0.308);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.logo-circular .logo-img {
+    width: 290px;
+}
+
+/* Información del footer */
+.footer-info {
+    margin-top: 250px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.icono-footer {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-bottom {
+    background-color: #F7F7F7;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/*Moviles*/
+@media (max-width: 576px) {
+
+    /* Navbar */
+    .navbar-nav .nav-link {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        display: none;
+    }
+
+    /* Sección Propósito */
+    .proposito-container {
+        flex-direction: column;
+        max-height: none;
+        margin-top: 200px;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+
+    .proposito-img {
+        display: none;
+    }
+
+
+    .proposito-texto-principal {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -30px;
+    }
+
+    .proposito-texto {
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .proposito-texto h2 {
+        font-size: 28px;
+        margin-left: 9px;
+    }
+
+    .proposito-texto p {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        align-items: center;
+        align-content: center;
+    }
+
+    .proposito-bloque {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .proposito-icono {
+        margin: 0 auto 20px;
+    }
+
+    .proposito-info strong {
+        font-size: 20px;
+    }
+
+    .proposito-info p {
+        font-size: 16px;
+        align-items: center;
+        align-content: center;
+    }
+
+    /* CTA Section */
+    .cta-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cta-title {
+        font-size: 28px;
+    }
+
+    .cta-description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .cta-button {
+        position: static;
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    /* Footer */
+
+    .footer-dacor {
+        margin-top: -100px;    
+    }
+
+    .footer-info {
+        flex-direction: column-reverse;
+        gap: 30px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .logo-circular {
+        width: 180px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-circular::before {
+        width: 210px;
+        height: 210px;
+    }
+
+    .logo-circular .logo-img {
+        width: 140px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}

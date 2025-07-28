@@ -1,0 +1,106 @@
+
+/* Tipografías personalizadas */
+@font-face {
+    font-family: 'Aloevera';
+    src: url('./tipografias/Aloevera/Aloevera-SemiBold.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica_Neue';
+  src: url('./tipografias/Helvetica/HelveticaNeue.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica_Bold';
+  src: url('./tipografias/Helvetica/HelveticaBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* Rethink Sans - Regular */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Rethink Sans - Italic */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Rethink Sans - Medium */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Rethink Sans - Medium Italic */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Rethink Sans - SemiBold */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Rethink Sans - SemiBold Italic */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Rethink Sans - Bold */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Rethink Sans - Bold Italic */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Rethink Sans - ExtraBold */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Rethink Sans - ExtraBold Italic */
+@font-face {
+  font-family: 'Rethink Sans';
+  src: url('../fonts/RethinkSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+
+

@@ -1,0 +1,565 @@
+/* Tipografías personalizadas */
+@font-face {
+    font-family: 'Aloevera';
+    src: url('./tipografias/Aloevera/Aloevera-SemiBold.otf') format('opentype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./tipografias/Helvetica Neue/Helvetica Neue LT Com 77 Bold Condensed.ttf') format('opentype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Desplazamiento suave al hacer scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar  */
+.navbar {
+    font-family: 'Helvetica', sans-serif;
+    min-height: 130px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Marca o logo de la navbar */
+.navbar-brand {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    color: #000000;
+}
+
+/* Estilos de enlaces del menú */
+.navbar-nav .nav-link {
+    text-align: left;
+    width: 130px;
+    padding: 0;
+    margin: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#contacto {
+    margin-top: 5px;
+}
+
+/* Sección principal con fondo de banner */
+.hero {
+    background: url('./img/img-contacto/banner.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+/* Nuevo contenedor interior en 2 columnas */
+.hero-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* Columna de la imagen */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    width: 600px;
+    margin-top: 900px;
+}
+
+/* Columna de texto */
+.hero-content {
+    flex: 1;
+    text-align: left;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Título del hero */
+.hero-title {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Aloevera';
+    letter-spacing: 2px;
+    text-align: left;
+    width: 500px;
+    margin-left: 50px;
+}
+
+/* Highlight con fondo */
+.highlight {
+    position: relative;
+    display: inline-block;
+    background-image: url('./img/img-consultoria/fondo.png');
+    background-size: cover;
+    background-position: center;
+    color: #0F2138;
+    z-index: 0;
+    overflow: hidden;
+    padding: 0 8px;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(219, 151, 3, 0.836);
+    z-index: -1;
+}
+
+/* Seccion Contactanos */
+.contactanos {
+    background-color: #f8f9fa;
+}
+
+.contactanos-contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 260px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.contactanos-imagen img {
+    min-width: 900px;
+    min-height: 600px;
+    margin-left: -380px;
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.contactanos-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contactanos-info h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #0F2138;
+    font-family: 'Aloevera';
+}
+
+.fila-contacto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.fila-contacto img {
+    width: 30px;
+    height: 30px;
+}
+
+.fila-contacto p {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.contactanos-redes {
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+}
+
+.contactanos-redes img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contactanos-redes img:hover {
+    transform: scale(1.1);
+}
+
+/* Formulario de contacto */
+.formulario-contacto {
+    padding: 5rem 2rem;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: white;
+
+    background-image: url('./img/img-contacto/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contenido encima del fondo */
+.form-texto,
+.form-container {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    align-items: center;
+    align-content: center;
+}
+
+/* Layout en columnas para pantallas grandes */
+@media (min-width: 992px) {
+    .form-box {
+        flex-direction: row;
+    }
+
+    .form-texto,
+    .form-container {
+        flex: 1;
+        padding: 3rem;
+    }
+}
+
+/* Texto izquierdo */
+.form-texto h2 {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1.3;
+    font-family: 'Aloevera', sans-serif;
+}
+
+.form-texto strong {
+    font-weight: 700;
+    color: #ffac1c;
+}
+
+.form-texto .info {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    color: #ccc;
+    font-family: 'Aloevera', sans-serif;
+
+}
+
+/* Formulario derecho */
+.bg-form {
+    background-color: transparent;
+    /* Fondo totalmente transparente */
+    border-radius: 20px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    /* Solo borde inferior */
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: inherit;
+    color: white;
+    /* Ajusta según el fondo */
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: #fff;
+}
+
+
+form button {
+    width: 100%;
+    padding: 0.9rem;
+    background-color: #ffac1c;
+    color: rgb(85, 85, 85);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #df9619;
+    color: #242424;
+}
+
+/* Footer */
+.footer-dacor {
+    background: url('./img/footer/fondo.png') no-repeat center center;
+    position: relative;
+    overflow: visible;
+    min-height: 438px;
+    padding-top: 10px;
+}
+
+.logo-circular {
+    width: 390px;
+    height: 390px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+
+.logo-circular::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.logo-circular .logo-img {
+    width: 290px;
+}
+
+/* Información del footer */
+.footer-info {
+    margin-top: 250px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.icono-footer {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-bottom {
+    background-color: #F7F7F7;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Laptops y tablets (pantallas menores a 992px) */
+@media (max-width: 991.98px) {
+
+    /* Hero */
+    .hero-inner {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        margin: 0;
+    }
+
+    .hero-title {
+        font-size: 48px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Contactanos sección */
+    .contactanos-contenido {
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactanos-imagen img {
+        min-width: auto;
+        min-height: auto;
+        width: 100%;
+        max-width: 600px;
+        margin-left: 0;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .contactanos-info {
+        min-width: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactanos-info h2 {
+        font-size: 32px;
+    }
+
+    .fila-contacto p {
+        font-size: 16px;
+    }
+
+    /* Formulario */
+    .form-box {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .form-texto,
+    .form-container {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form-texto h2 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .form-texto .info {
+        font-size: 1rem;
+    }
+
+    .bg-form {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+/* Móviles (pantallas menores a 768px) */
+@media (max-width: 767.98px) {
+
+    /* Navbar */
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin: 0 10px;
+        width: auto;
+        text-align: center;
+    }
+
+    .navbar {
+        min-height: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: auto;
+        padding: 60px 20px 40px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        width: 100%;
+        margin-left: 0;
+        letter-spacing: 1px;
+    }
+
+    .highlight {
+        padding: 0 4px;
+        font-size: 1.1em;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    /* Contactanos */
+    .contactanos-contenido {
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .contactanos-info h2 {
+        font-size: 28px;
+    }
+
+    .fila-contacto p {
+        font-size: 14px;
+    }
+
+    .contactanos-redes img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contactanos-imagen {
+        display: none;
+    }
+
+    /* Formulario */
+    .form-texto h2 {
+        font-size: 28px;
+    }
+
+    .form-texto .info {
+        font-size: 0.9rem;
+    }
+
+    .bg-form {
+        padding: 1rem;
+    }
+
+    form button {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    /* Footer */
+    .footer-info {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .icono-footer {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-circular {
+        width: 250px;
+        height: 250px;
+    }
+
+    .logo-circular .logo-img {
+        width: 180px;
+    }
+}

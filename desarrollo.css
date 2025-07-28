@@ -1,0 +1,1023 @@
+/* Tipografías personalizadas */
+@font-face {
+    font-family: 'Aloevera';
+    src: url('./tipografias/Aloevera/Aloevera-SemiBold.otf') format('opentype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./tipografias/Helvetica Neue/Helvetica Neue LT Com 77 Bold Condensed.ttf') format('opentype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Desplazamiento suave al hacer scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar  */
+.navbar {
+    font-family: 'Helvetica', sans-serif;
+    min-height: 130px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Marca o logo de la navbar */
+.navbar-brand {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    color: #000000;
+}
+
+/* Estilos de enlaces del menú */
+.navbar-nav .nav-link {
+    text-align: left;
+    width: 130px;
+    padding: 0;
+    margin: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#contacto {
+    margin-top: 5px;
+}
+
+/* Sección principal con fondo de banner */
+.hero {
+    background: url('./img/img-desarrollo/banner.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 150px;
+}
+
+/* Título del hero */
+.hero-title {
+    font-size: 80px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: 'Aloevera';
+    letter-spacing: 2px;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    background-image: url('./img/img-consultoria/fondo.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 0.2em 0.5em;
+    z-index: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(219, 151, 3, 0.836);
+    z-index: -1;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Seccion 1*/
+.info-section {
+    position: relative;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+    max-height: 494px;
+
+    background-image: url('./img/img-desarrollo/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* Para responsividad */
+}
+
+.info-image {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    position: relative;
+    z-index: 2;
+    transform: translateY(50px);
+}
+
+.info-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    margin-left: 100px;
+    margin-top: -200px;
+}
+
+.info-text h2 {
+    font-family: 'Helvetica';
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1px;
+    color: #757575;
+}
+
+.info-text p {
+    font-size: 15px;
+    color: #757575;
+    margin-bottom: 24px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.info-item div,
+strong {
+    color: #757575;
+}
+
+.info-item img {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+/* Seccion 2 */
+.next-section {
+    padding: 100px 20px;
+    background-color: #ffffff;
+}
+
+.next-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.left-column {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.left-column .titulo {
+    font-family: Helvetica;
+    color: #13283e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.left-image {
+    max-width: 100%;
+    height: auto;
+    padding-top: 150px;
+}
+
+.left-description {
+    font-size: 16px;
+    color: #555;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.right-column {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+}
+
+.icon-group {
+    position: relative;
+    padding-left: 40px;
+}
+
+.icon-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    flex-shrink: 0;
+}
+
+.icon-circle img {
+    width: 80px;
+    height: 80px;
+}
+
+.icon-text {
+    margin-left: 20px;
+}
+
+.icon-text h4 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.icon-text p {
+    font-size: 15px;
+    color: #666;
+}
+
+/* Línea verde vertical */
+.vertical-line {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 2px;
+    height: calc(100% - 40px);
+    background-color: #198754;
+    z-index: 1;
+}
+
+/*Seccion 3*/
+.benefits-section {
+    padding: 80px 60px;
+    background-color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.benefits-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.benefits-left {
+    flex: 1;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #13283e;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #13283e;
+    margin-bottom: 20px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.benefits-list li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #666;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.benefits-list li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+}
+
+.benefits-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.benefits-image {
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    margin-right: -302px;
+}
+
+/* Sección 4 */
+.section-four {
+    padding: 80px 60px;
+    background-color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.section-four-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.section-four-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    min-width: 300px;
+}
+
+.section-four-image {
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    margin-left: -320px;
+}
+
+.section-four-right {
+    flex: 1;
+    min-width: 300px;
+    margin-left: 100px;
+}
+
+.section-four-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #13283e;
+    margin-bottom: 20px;
+}
+
+.section-four-description {
+    font-size: 18px;
+    color: #13283e;
+    margin-bottom: 20px;
+    max-width: 440px;
+}
+
+.section-four-list {
+    list-style: none;
+    padding: 0;
+}
+
+.section-four-list li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #666;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.section-four-list li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+}
+
+/* Sección 5 */
+.section-five {
+    padding: 80px 60px;
+    background-color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.section-five-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.section-five-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.section-five-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #13283e;
+    margin-bottom: 20px;
+}
+
+.section-five-description {
+    font-size: 18px;
+    color: #13283e;
+    margin-bottom: 20px;
+    max-width: 440px;
+}
+
+.section-five-list {
+    list-style: none;
+    padding: 0;
+}
+
+.section-five-list li {
+    font-size: 16px;
+    margin-bottom: 12px;
+    color: #666;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.section-five-list li::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+}
+
+.section-five-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 300px;
+}
+
+.section-five-image {
+    max-width: 1000px;
+    height: auto;
+    object-fit: contain;
+    margin-right: -302px;
+}
+
+/* Footer */
+.footer-dacor {
+    background: url('./img/footer/fondo.png') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    overflow: visible;
+    min-height: 438px;
+    padding-top: 10px;
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+}
+
+/* LOGO circular */
+.logo-circular {
+    width: 390px;
+    height: 390px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.logo-circular::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.logo-circular .logo-img {
+    width: 290px;
+}
+
+/* Información de contacto */
+.footer-info {
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 60px 20px 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.item-footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 320px;
+}
+
+.item-footer strong {
+    color: #ffffff;
+}
+
+.icono-footer {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Pie de copyright */
+.footer-bottom {
+    background-color: #F7F7F7;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #333;
+    text-align: center;
+    padding: 16px 20px;
+}
+
+
+/* Media query general para tablets y pantallas medianas */
+@media (max-width: 1200px) {
+
+    html {
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+
+    /* Contenedores flex verticales */
+    .info-container,
+    .next-container,
+    .benefits-container,
+    .section-four-container,
+    .section-five-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Imagen circular más pequeña y sin transformaciones */
+    .info-image {
+        width: 350px;
+        height: 350px;
+        transform: none !important;
+        margin-bottom: 20px;
+    }
+
+    /* Textos al centro y sin márgenes que desborden */
+    .info-text,
+    .left-column,
+    .right-column,
+    .benefits-left,
+    .benefits-right,
+    .section-four-left,
+    .section-four-right,
+    .section-five-left,
+    .section-five-right {
+        margin: 0;
+        max-width: 100%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .left-description {
+        width: 100%;
+    }
+
+    /* Imágenes que no desborden */
+    .benefits-image,
+    .section-four-image,
+    .section-five-image {
+        margin: 0 auto !important;
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* Título hero más pequeño y sin margen lateral */
+    .hero-title {
+        font-size: 50px;
+        padding: 0 10px;
+        word-break: break-word;
+    }
+
+    .hero-content {
+        margin-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Media query para tablets y móviles grandes */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Navbar: links más pequeños y con margen reducido */
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin: 0 8px;
+        width: auto;
+    }
+
+    /* Hero título y texto más compactos */
+    .hero-title {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* Footer logo más pequeño y centrado */
+    .logo-circular {
+        width: 200px;
+        height: 200px;
+        top: 10px;
+    }
+
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 220px;
+        gap: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .item-footer {
+        justify-content: center;
+    }
+
+    /* Imagen circular info más pequeña */
+    .info-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Ajuste márgenes textos para evitar desbordes */
+    .info-text,
+    .section-four-right {
+        margin-left: 0 !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Reducir padding en secciones para que no desborden */
+    .info-section,
+    .next-section,
+    .benefits-section,
+    .section-four,
+    .section-five {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/* Media query para móviles pequeños */
+@media (max-width: 480px) {
+
+    /* Hero título y texto más pequeños y con buen wrapping */
+    .hero-title {
+        font-size: 28px;
+        word-wrap: break-word;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    /* Navbar vertical, links centrados y sin márgenes */
+    .navbar-nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 6px 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Imagen circular info aún más pequeña */
+    .info-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Imágenes en secciones max width 100% */
+    .benefits-image,
+    .section-four-image,
+    .section-five-image {
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* Listas con texto más pequeño y sin desbordes */
+    .benefits-list li,
+    .section-four-list li,
+    .section-five-list li {
+        font-size: 14px;
+        padding-left: 1.2em;
+        word-wrap: break-word;
+    }
+
+    /* Footer texto y márgenes más pequeños */
+    .footer-info {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+    }
+}
+
+/* Laptop / pantallas medianas (hasta 1200px) */
+@media (max-width: 1200px) {
+
+    /* Contenedores flex verticales */
+    .info-container,
+    .next-container,
+    .benefits-container,
+    .section-four-container,
+    .section-five-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Imagen circular más pequeña y sin transformaciones */
+    .info-image {
+        width: 350px;
+        height: 350px;
+        transform: none !important;
+        margin-bottom: 20px;
+    }
+
+    /* Textos centrados y sin margen lateral excesivo */
+    .info-text,
+    .left-column,
+    .right-column,
+    .benefits-left,
+    .benefits-right,
+    .section-four-left,
+    .section-four-right,
+    .section-five-left,
+    .section-five-right {
+        margin: 0;
+        max-width: 100%;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .left-description {
+        width: 100%;
+    }
+
+    /* Ajuste imágenes para no desbordar */
+    .benefits-image,
+    .section-four-image,
+    .section-five-image {
+        margin: 0 auto !important;
+        max-width: 90%;
+        height: auto;
+    }
+
+    /* Título hero más pequeño y ajustado */
+    .hero-title {
+        font-size: 50px;
+        padding: 0 10px;
+        word-break: break-word;
+    }
+
+    .hero-content {
+        margin-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Tablets y móviles grandes (hasta 768px) */
+@media (max-width: 768px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Navbar links más pequeños y con margen reducido */
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        margin: 0 8px;
+        width: auto;
+    }
+
+    /* Hero texto más compacto */
+    .hero-title {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* Footer logo más pequeño y centrado */
+    .logo-circular {
+        width: 200px;
+        height: 200px;
+        top: 10px;
+    }
+
+    /* Footer info: columna y centrado */
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 220px;
+        gap: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .item-footer {
+        justify-content: center;
+    }
+
+    /* Imagen circular info más pequeña */
+    .info-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Ajuste de márgenes para evitar desbordes */
+    .info-text,
+    .section-four-right {
+        margin-left: 0 !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Padding reducido en secciones */
+    .info-section,
+    .next-section,
+    .benefits-section,
+    .section-four,
+    .section-five {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+
+    .hero {
+        background: url('./img/img-desarrollo/banner.png') no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 0 40px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+        margin-top: 0;
+    }
+
+
+    /* Hero título más pequeño */
+    .hero-title {
+        font-size: 28px;
+        word-wrap: break-word;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+    /* Navbar vertical, links centrados */
+    .navbar-nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 6px 0;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* Imagen circular info más pequeña */
+    .info-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Imágenes max width 100% */
+    .benefits-image,
+    .section-four-image,
+    .section-five-image {
+        max-width: 100%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* Listas con texto más pequeño y sin desbordes */
+    .benefits-list li,
+    .section-four-list li,
+    .section-five-list li {
+        font-size: 14px;
+        padding-left: 1.2em;
+        word-wrap: break-word;
+    }
+
+    /* Footer texto más pequeño */
+    .footer-info {
+        font-size: 16px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+    }
+
+    .info-item {
+        display: none;
+    }
+}

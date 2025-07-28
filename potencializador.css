@@ -1,0 +1,504 @@
+/* Tipografías personalizadas */
+@font-face {
+    font-family: 'Aloevera';
+    src: url('./tipografias/Aloevera/Aloevera-SemiBold.otf') format('opentype');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('./tipografias/Helvetica Neue/Helvetica Neue LT Com 77 Bold Condensed.ttf') format('opentype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Desplazamiento suave al hacer scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navbar  */
+.navbar {
+    font-family: 'Helvetica', sans-serif;
+    min-height: 130px;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Marca o logo de la navbar */
+.navbar-brand {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    color: #000000;
+}
+
+/* Estilos de enlaces del menú */
+.navbar-nav .nav-link {
+    text-align: left;
+    width: 130px;
+    padding: 0;
+    margin: 0 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#contacto {
+    margin-top: 5px;
+}
+
+/* Sección principal con fondo de banner */
+.hero {
+    background-image: url('./img/img-potencializador/banner.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* ← Comienza desde arriba */
+    background-size: cover;
+    /* ← Cubre el contenedor */
+    width: 100%;
+    height: 789px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* ← Alinea contenido arriba */
+    color: white;
+    padding: 150px 40px 0;
+    /* ← Ajusta espacio desde arriba */
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    /* ← Recorta lo que sobresale */
+    margin-top: 130px;
+}
+
+.hero-content {
+    max-width: 600px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 200px;
+    margin-left: -700px;
+}
+
+/* Título del hero */
+.hero-title {
+    font-size: 80px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: 'Aloevera';
+    letter-spacing: 4px;
+    text-align: left;
+}
+
+.highlight {
+    position: relative;
+    display: inline-block;
+    background-image: url('./img/img-consultoria/fondo.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    z-index: 0;
+    overflow: hidden;
+    text-align: left;
+}
+
+.highlight::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #13283e;
+    z-index: -1;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/*Seccion 1*/
+
+.seccion-potencializador {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.fila-imagen {
+    position: relative;
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+.fila-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.resaltado {
+    font-weight: bold;
+    color: #13283e;
+    font-size: 1.25em;
+    padding: 0 4px;
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    top: 50%;
+    /* Centrado vertical */
+    left: 76%;
+    /* Centrado horizontal */
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #13283e;
+    text-align: left;
+    padding: 20px;
+    width: 528px;
+    font-size: 17px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.texto-sobre-imagen p {
+    font-size: 1.2em;
+    margin: 0;
+    color: #182e44;
+}
+
+/* Fila de beneficios */
+.fila-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: -70px;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.columna-beneficio {
+    flex: 1 1 calc(25% - 20px);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.columna-beneficio img {
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.columna-beneficio h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #666;
+    font-weight: bold;
+}
+
+.columna-beneficio p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Sección 2 */
+.cta-section {
+    background: url('./img/img-potencializador/Seccion2/fondo.png') no-repeat center center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    color: #ffffff;
+    position: relative;
+}
+
+.cta-title {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.cta-description {
+    font-size: 19px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+.cta-button {
+    background-color: #008d2f;
+    color: white;
+    padding: 14px 70px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button {
+    position: relative;
+    left: 400px;
+}
+
+.cta-button .arrow {
+    font-weight: bold;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+
+.cta-button:hover {
+    background-color: #00bd3c;
+}
+
+/* Footer */
+.footer-dacor {
+    background: url('./img/footer/fondo.png') no-repeat center center;
+    position: relative;
+    overflow: visible;
+    min-height: 438px;
+    padding-top: 10px;
+}
+
+.logo-circular {
+    width: 390px;
+    height: 390px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+
+.logo-circular::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.logo-circular .logo-img {
+    width: 290px;
+}
+
+/* Información del footer */
+.footer-info {
+    margin-top: 250px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+}
+
+.icono-footer {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-bottom {
+    background-color: #F7F7F7;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* ----------- Laptops / tablets grandes (992px a 1200px) ----------- */
+@media (max-width: 1200px) and (min-width: 993px) {
+  /* Hero */
+  .hero {
+    height: 600px;
+    padding: 100px 30px;
+  }
+
+  .hero-content {
+    margin-left: 0;
+    margin-top: 100px;
+    max-width: 500px;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+
+  /* Texto sobre imagen */
+  .texto-sobre-imagen {
+    left: 65%;
+    width: 450px;
+    font-size: 1.1em;
+  }
+
+  /* CTA */
+  .cta-button {
+    left: 200px; /* menos desplazamiento */
+    padding: 12px 50px;
+    font-size: 16px;
+  }
+}
+
+/* ----------- Laptops / tablets medianas (768px a 992px) ----------- */
+@media (max-width: 992px) and (min-width: 769px) {
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+    max-width: 450px;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 45px;
+    letter-spacing: 2px;
+  }
+
+  /* Texto sobre imagen: cambia a bloque normal debajo de la imagen */
+  .texto-sobre-imagen {
+    position: static;
+    width: 100%;
+    left: auto;
+    top: auto;
+    transform: none;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Beneficios: 2 columnas */
+  .fila-beneficios {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .columna-beneficio {
+    flex: 1 1 calc(50% - 30px);
+    margin-bottom: 20px;
+  }
+
+  /* CTA button */
+  .cta-button {
+    position: static;
+    left: auto;
+    margin: 0 auto;
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+}
+
+/* ----------- Móviles pequeños y tablets (menos de 768px) ----------- */
+@media (max-width: 768px) {
+  /* Navbar más compacta */
+  .navbar {
+    min-height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    width: auto;
+    margin: 0 10px;
+    padding: 8px 0;
+  }
+
+  /* Hero */
+  .hero {
+    height: auto;
+    padding: 60px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    letter-spacing: 1.5px;
+  }
+
+  /* Texto sobre imagen: siempre debajo en móvil */
+  .texto-sobre-imagen {
+    position: static;
+    width: 100%;
+    padding: 15px 10px;
+    transform: none;
+    text-align: center;
+    margin-top: 15px;
+    left: auto;
+    top: auto;
+  }
+
+  /* Beneficios: columnas en bloque */
+  .fila-beneficios {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .columna-beneficio {
+    flex: 1 1 100%;
+  }
+
+  /* CTA */
+  .cta-section {
+    height: auto;
+    padding: 40px 20px;
+  }
+  .cta-title {
+    font-size: 28px;
+  }
+  .cta-description {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .cta-button {
+    position: static;
+    left: auto;
+    margin: 0 auto;
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  /* Footer info */
+  .footer-info {
+    margin-top: 100px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
