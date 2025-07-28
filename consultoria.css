@@ -80,7 +80,7 @@ html {
     font-size: 80px;
     margin-bottom: 1rem;
     font-weight: bold;
-    font-family: 'Aloevera';
+    font-family: 'Aloevera', sans-serif;
     letter-spacing: 2px;
 }
 
@@ -92,7 +92,6 @@ html {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 0.2em 0.5em;
     z-index: 0;
     overflow: hidden;
     text-align: left;
@@ -102,7 +101,7 @@ html {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(219, 151, 3, 0.836);
+    background-color: #f5ba09;
     z-index: -1;
 }
 
@@ -161,16 +160,17 @@ html {
 
 .proposito-texto h2 {
     font-size: 40px;
-    color: #001f4d;
+    color: #223355;
     margin-bottom: 20px;
 }
 
 .proposito-texto p {
     font-size: 20px;
-    color: #333;
+    color: #223355;
     line-height: 1.6;
     margin-bottom: 30px;
     width: 600px;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .proposito-bloque {
@@ -211,7 +211,7 @@ html {
 
 .proposito-info strong {
     font-size: 24px;
-    color: #4b4b4b;
+    color: #808080;
     font-weight: bold;
     margin-bottom: 10px;
 }
@@ -251,7 +251,8 @@ html {
     font-size: 70px;
     font-weight: 800;
     margin-bottom: 20px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Aloevera', sans-serif;
+    color: #24394f;
 }
 
 .cta-description {
@@ -270,8 +271,9 @@ html {
     font-size: 18px;
     text-decoration: none;
     letter-spacing: 3px;
-    font-weight: bold;
+    font-weight: lighter;
     transition: background-color 0.3s ease;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .cta-button {

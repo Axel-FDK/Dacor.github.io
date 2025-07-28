@@ -90,7 +90,6 @@ html {
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 0.2em 0.5em;
     z-index: 0;
     overflow: hidden;
     text-align: left;
@@ -165,17 +164,18 @@ html {
 }
 
 .info-text h2 {
-    font-family: 'Helvetica';
-    font-size: 20px;
+    font-family: 'Aloevera', sans-serif;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 1px;
-    color: #757575;
+    color: #646464;
 }
 
 .info-text p {
-    font-size: 15px;
-    color: #757575;
+    font-size: 16px;
+    color: #646464;
     margin-bottom: 24px;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .info-item {
@@ -187,7 +187,8 @@ html {
 
 .info-item div,
 strong {
-    color: #757575;
+    color: #646464;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .info-item img {
@@ -220,7 +221,7 @@ strong {
 }
 
 .left-column .titulo {
-    font-family: Helvetica;
+    font-family: 'Aloevera', sans-serif;
     color: #13283e;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -233,10 +234,11 @@ strong {
 }
 
 .left-description {
-    font-size: 16px;
-    color: #555;
+    font-size: 18px;
+    color: #646464;
     width: 500px;
     margin: 0 auto;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .right-column {
@@ -281,11 +283,13 @@ strong {
     font-size: 18px;
     color: #666;
     margin-bottom: 4px;
+    font-family: 'Helvetica', sans-serif;
 }
 
 .icon-text p {
     font-size: 15px;
     color: #666;
+    font-family: 'Helvetica', sans-serif;
 }
 
 /* Línea verde vertical */
@@ -327,9 +331,12 @@ strong {
 }
 
 .section-description {
-    font-size: 18px;
+    font-size: 20px;
     color: #13283e;
     margin-bottom: 20px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    line-height: 1.3rem;
 }
 
 .benefits-list {
@@ -343,6 +350,8 @@ strong {
     color: #666;
     padding-left: 1.5em;
     position: relative;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
 }
 
 .benefits-list li::before {
@@ -413,6 +422,8 @@ strong {
     color: #13283e;
     margin-bottom: 20px;
     max-width: 440px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
 }
 
 .section-four-list {
@@ -426,6 +437,8 @@ strong {
     color: #666;
     padding-left: 1.5em;
     position: relative;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
 }
 
 .section-four-list li::before {
@@ -468,6 +481,8 @@ strong {
     color: #13283e;
     margin-bottom: 20px;
     max-width: 440px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
 }
 
 .section-five-list {
@@ -481,6 +496,8 @@ strong {
     color: #666;
     padding-left: 1.5em;
     position: relative;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
 }
 
 .section-five-list li::before {
