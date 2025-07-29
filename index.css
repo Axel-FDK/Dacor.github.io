@@ -763,6 +763,17 @@ button[type="submit"] {
 
 @media (max-width: 768px) {
 
+        /* General */
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
     /* Navbar */
     .navbar {
         padding-top: 0.5rem;
