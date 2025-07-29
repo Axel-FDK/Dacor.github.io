@@ -903,6 +903,17 @@ button[type="submit"] {
         margin-top: -230px;
     }
 
+    .circle-text h3 {
+        color: #ffffff;
+        max-width: 200px;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        white-space: normal;
+        word-wrap: break-word;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
     .circle-text ul {
         font-size: 13px;
         width: 160px;
@@ -1005,18 +1016,19 @@ button[type="submit"] {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin-left: 0;
     }
 
     .motus-contenido {
         flex-direction: column;
-        padding: 0 20px;
     }
 
     .motus-intro {
-        margin-left: 0;
+        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-left: 0;
     }
 
     .motus-intro-texto {
@@ -1074,7 +1086,7 @@ button[type="submit"] {
 
     /* Formulario de contacto */
     .formulario-contacto {
-        min-width: 450px;
+        min-width: 507px;
         margin-bottom: 80px;
         margin-left: -40px;
     }
@@ -1104,16 +1116,17 @@ button[type="submit"] {
         min-height: auto;
     }
 
+    .info-form{
+        margin: 0 auto;
+    }
+
     /* Footer */
     .footer-info {
         flex-direction: column;
         gap: 20px;
         font-size: 1rem;
         margin-top: 100px;
-    }
-
-    .ubi {
-        margin-left: 50px;
+        width: 250px;
     }
 
     .logo-circular {
@@ -1134,4 +1147,32 @@ button[type="submit"] {
         font-size: 0.9rem;
         padding: 1rem;
     }
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 375px) {
+
+    .seccion-motus {
+        margin-left: -29px;
+    }
+
+    .formulario-contacto {
+        min-width: 460px;
+        margin-bottom: 80px;
+    }
+
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 320px) {
+
+    .seccion-motus {
+        margin-left: -60px;
+    }
+
+    .formulario-contacto {
+        min-width: 400px;
+        margin-bottom: 80px;
+    }
+
 }
