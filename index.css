@@ -960,9 +960,12 @@ button[type="submit"] {
     /* MOTUS 2.0 */
 
     .seccion-motus {
-        margin-left: -80px;
+        margin-left: -50px;
         background-image: none;
         margin-top: -150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .motus-contenido {
