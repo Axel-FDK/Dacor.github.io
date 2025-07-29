@@ -861,7 +861,7 @@ button[type="submit"] {
     .circle-container {
         width: 100%;
         height: auto;
-        padding-top: 40px;
+        padding-top: 90px;
     }
 
     .circle-img {
@@ -874,11 +874,13 @@ button[type="submit"] {
         width: 100%;
         padding: 20px;
         text-align: center;
-        margin-top: -180px;
+        margin-top: -230px;
     }
 
     .circle-text ul {
-        display: none;
+        font-size: 13px;
+        width: 160px;
+        margin: 0 auto;
     }
 
     .circle-text a {
@@ -1034,9 +1036,17 @@ button[type="submit"] {
         height: auto;
     }
 
+    .seccion-evolucion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 600px;
+    }
+
     /* Formulario de contacto */
     .formulario-contacto {
-        min-width: 400px;
+        min-width: 450px;
         margin-bottom: 80px;
         margin-left: -40px;
     }
